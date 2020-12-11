@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "Cindy-Login"
+  "defaultProject": "Cindy-Login",
+  "cli": {
+    "analytics": "ce15cb4c-6d45-4358-a011-70ff48571f77"
+  }
 }

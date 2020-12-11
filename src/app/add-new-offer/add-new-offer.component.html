@@ -1,0 +1,40 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+      <div class="row content">
+        <div class="col-sm-3 sidenav">
+          <h4>Job Offers</h4>
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a routerLink="/offers">View Job Offers</a></li>
+            <li><a routerLink="/login">Log Out</a></li>
+          </ul>
+        </div>
+    
+        <div class="col-sm-9">
+            <div class="login-form">
+                <form [formGroup]="addOfferForm">
+                   <div class="form-group">
+                     <label>Company Name:</label>
+                     <input type="text" class="form-control" placeholder="Company Name" formControlName='companyName' required>
+                     <label>Position:</label>
+                     <input type="text" class="form-control" placeholder="e.g. Manager" formControlName='position' required>
+                     <label>Job Description:</label>
+                     <textarea class="form-control" rows="3" required placeholder="e.g. This job is for dummies" formControlName='description'></textarea>
+                     <label>Salary:</label>
+                     <input type="text" class="form-control" placeholder="e.g. 100$/week" formControlName='salary' required>
+                   </div>
+                    <button (click)="handleSubmitButtonClick()" type="submit" class="btn btn-primary">Add Job Offer</button>
+                </form>
+             </div>
+        </div>
+      </div>
+    </div>
+</body>

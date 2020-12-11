@@ -1,0 +1,33 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="sidenav">
+         <div class="login-main-text">
+            <h2>Cindy</h2>
+            <p>Login or register from here to access.</p>
+         </div>
+      </div>
+      <div class="main">
+         <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+               <form [formGroup]="registerForm">
+                  <div class="form-group">
+                     <label>First Name</label>
+                     <input type="name" class="form-control" placeholder="e.g. Ivan"  formControlName='firstName' required>
+                     <label>Second Name</label>
+                     <input type="name" class="form-control" placeholder="e.g. Ivanov"  formControlName='lastName' required>   
+                  </div>
+                  <div class="form-group">
+                     <label>E-mail</label>
+                     <input type="email" class="form-control" placeholder="Valid E-mail" formControlName='email' required>
+                     <label>Password</label>
+                     <input type="password" class="form-control" placeholder="Password"  formControlName='password' required>
+                  </div>
+                  <button (click)="handleRegisterButtonClick()" type="submit" class="btn btn-black">Register</button>
+                  <a routerLink="/login"><button type="submit" class="btn btn-secondary">Login</button></a>
+               </form>
+            </div>
+         </div>
+</div>
