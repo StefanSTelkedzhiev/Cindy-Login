@@ -1,11 +1,11 @@
-Project Cindy
+# Project Cindy
 
 Cindy е платформа е платформа за оферти за работа.
 
 Посетителите трябва да се регистрират/логнат за да може да създават оферти или виждат списъка от създадени оферти.
 
 
-Backend & Database
+## Backend & Database
 
 За сървър и датабаза ползвах backendless (https://backendless.com/): 
 
@@ -16,7 +16,7 @@ Backend & Database
 Backendless прави лесно аутентикацията както и добавянето и четене на обекти от датабазата. Също така, лесна е и проверката дали потребителя е аутентикиран: Backendless.UserService.isValidLogin().
 
 
-Front End
+## Front End
 
 За попълване на дата използвах Reactive forms (https://angular.io/guide/reactive-forms) с (click) функции на бутони.
 
@@ -25,8 +25,6 @@ Front End
 Защитих пътищата, които трябва да се виждат само от аутентикирани потребители, като в ngOnInit валидирам потребителя.
 
 За стилове реших да ползвам Bootstrap (https://getbootstrap.com/docs/5.0/getting-started/introduction/) тъй като съм по-запознат с библиотеката.
-
-# CindyLogin
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
